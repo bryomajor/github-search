@@ -22,4 +22,10 @@ export class ProfileService {
     + "&client_secret" + this.clientSecret).pipe(
       map(response => response))
    }
+
+   getRepos() {
+    return this._http.get("https://api.github.com/users/" + this.username + "/repos?client_id" + this.clientId
+    + "&client_secret" + this.clientSecret).pipe(
+      map(response => response))
+   }
 }
