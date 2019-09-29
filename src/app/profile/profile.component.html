@@ -14,11 +14,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 my-4">{{profile.name}} <small>({{profile.login}})</small>
-                    <span class="ml-4"><a href="{{profile.html_url}}" target="_blank"
-                            class="btn btn-success btn-sm">View profile
-                            on
-                            github</a></span>
+                <div class="col-12 my-4">
+                    <h3>{{profile.name}} <small>({{profile.login}})</small>
+                        <span class="ml-4 col-sm-12 col-xs-12 col-12"><a href="{{profile.html_url}}" target="_blank"
+                                class="btn btn-success btn-sm">View profile
+                                on
+                                github</a></span></h3>
                 </div>
             </div>
             <div class="row">
@@ -33,17 +34,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="row my-3 text-white">
-                <div class="col-3">
+            <div class="row text-white mt-2">
+                <div class="col-12 col-sm-12 col-md-3 col-xs-12  my-3">
                     <span class="bg-success p-2 rounded">{{profile.followers}} Followers</span>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-12 col-md-3 col-xs-12  my-3">
                     <span class="bg-secondary p-2 rounded">Following {{profile.following}}</span>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-12 col-md-3 col-xs-12  my-3">
                     <span class="bg-dark p-2 rounded">{{profile.public_gists}} Public gists</span>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-12 col-md-3 col-xs-12  my-3">
                     <span class="bg-info p-2 rounded">{{profile.public_repos}} Public repos</span>
                 </div>
             </div>
@@ -51,24 +52,24 @@
 
         <div class="card-footer">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#reposModal">
                 View Repos
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="reposModal" tabindex="-1" role="dialog" aria-labelledby="reposModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Repos</h5>
+                            <h3 class="modal-title ml-4" id="reposModalLabel">Repos</h3>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-left">
                             <ul *ngFor='let repo of repos'>
-                                <li class="row my-5">
+                                <li class="row my-5 pr-4">
                                     <div class="col-8 text-left">
                                         <h4>{{repo.name}}</h4>
                                     </div>
