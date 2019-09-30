@@ -18,13 +18,13 @@ export class ProfileService {
    }
 
    getProfileInfo() {
-    return this._http.get("https://api.github.com/users/" + this.username + "?client_id" + this.clientId
+    return this._http.get<any>("https://api.github.com/users/" + this.username + "?client_id" + this.clientId
     + "&client_secret" + this.clientSecret).pipe(
       map(response => response))
    }
 
    getRepos() {
-    return this._http.get("https://api.github.com/users/" + this.username + "/repos?client_id" + this.clientId
+    return this._http.get<any>("https://api.github.com/users/" + this.username + "/repos?client_id" + this.clientId
     + "&client_secret" + this.clientSecret).pipe(
       map(response => response))
    }

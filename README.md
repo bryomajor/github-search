@@ -3,12 +3,12 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
 ## Description
-This web app enables users to add their favorite quotes and have them voted for. The user can also vote.
+This web app enables users to search for Github accounts.
 
 
 ## Versioning
 
-GithubSearch
+Github Search
 
 ## Author
 
@@ -29,7 +29,7 @@ As a user of the web application you will be able to:
 |Page loads and the user sees my profile and a search form.  |User types into the form.    |The profile being sought is displayed.
 
 ## Working Live Application
-You can see the live working application through the this link. [Github Search](https://bryomajor.github.io/github-search/)
+You can see the live working application through the this link. [Github Search](https://git-search-b36d8.firebaseapp.com/)
 
 ## Getting started
 
@@ -82,7 +82,7 @@ The application is developed using [JAVASCRIPT](https://www.w3schools.com/js/def
 
 ## Support and Team
 Brian Major
-Whiteboard URI: https://trello.com/b/EVUct34u/git-search-app
+(Whiteboard URI: https://trello.com/b/EVUct34u/git-search-app)
 
 
 [Brian Major](https://slack.com/intl/en-ke/)  @bryomajor
